@@ -15,14 +15,22 @@ pipeline:
   - name: DIETClassifier
     epochs: 107
     model_confidence: softmax
+<<<<<<< HEAD
+    constrain_similarities: true
+=======
     constrain_similarities: True
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
     tensorboard_log_directory: ".tensorboard_diet"
     tensorboard_log_level: "epoch"
   - name: EntitySynonymMapper
   - name: ResponseSelector
     model_confidence: softmax
     epochs: 100
+<<<<<<< HEAD
+    constrain_similarities: true
+=======
     constrain_similarities: True
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
   - name: FallbackClassifier
     threshold: 0.1
     ambiguity_threshold: 0.1
@@ -36,7 +44,15 @@ policies:
     model_confidence: softmax
     tensorboard_log_directory: ".tensorboard_ted"
     tensorboard_log_level: "epoch"
+<<<<<<< HEAD
+    constrain_similarities: true
+=======
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
   - name: RulePolicy
     core_fallback_threshold: 0.1
     core_fallback_action_name: "utter_nao_core"
     enable_fallback_prediction: False
+<<<<<<< HEAD
+    constrain_similarities: true
+=======
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+version: "3.1"
+=======
 version: "3.0"
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 nlu:
 - intent: cumprimentar
   examples: |
@@ -10,12 +14,18 @@ nlu:
     - bom dia
     - boa tarde
     - boa noite
+<<<<<<< HEAD
+    - ola
+=======
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - intent: despedir
   examples: |
     - tchau
     - adeus
     - flw
     - Até mais, bot
+<<<<<<< HEAD
+=======
 - intent: religiao
   examples: |
     - voce acredita em [deus](religiao)
@@ -55,6 +65,7 @@ nlu:
     - conte-me uma [piada](piada)
     - manda uma [piada](piada) ai
     - me conta uma [coisa engraçada](piada)
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - intent: licenca
   examples: |
     - qual é a sua [licença](licenca)?
@@ -87,6 +98,8 @@ nlu:
     - qual e o seu [endereco](vive)
     - qual o seu [endereço](vive)
     - qual o seu [endereco](vive)
+<<<<<<< HEAD
+=======
 - intent: genero
   examples: |
     - voce é [homem](genero) ou [mulher](genero)?
@@ -177,6 +190,7 @@ nlu:
     - diz pra mim qual é seu [signo](signo)
     - diz pra mim qual e seu [signo](signo)
     - seu [signo](signo)
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - intent: triste
   examples: |
     - Estou [triste](triste)
@@ -191,6 +205,8 @@ nlu:
     - tô [triste](triste)
     - tô [infeliz](triste)
     - tô [frustrado](triste)
+<<<<<<< HEAD
+=======
 - intent: historia
   examples: |
     - me fala uma [história](historia)
@@ -205,6 +221,7 @@ nlu:
     - me conta uma [experiencia](historia)
     - me conta uma [historinha](historia)
     - me conta uma [estória](historia)
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - intent: elogios
   examples: |
     - você é muito educado
@@ -263,6 +280,12 @@ nlu:
     - como vai vc
 - intent: me_ajuda
   examples: |
+<<<<<<< HEAD
+    - Preciso de ajuda
+    - Como a [defensoria](defensoria) pode me ajudar
+    - onde a [defensoria](defensoria) pode me ajudar
+    - Preciso abrir um processo
+=======
     - sobre o que você sabe falar
     - o que mais você sabe falar
     - quais assuntos você fala
@@ -284,6 +307,7 @@ nlu:
     - Vc tem algum propósito?
     - Como que vc pode me ser útil?
     - Me fale mais sobre você.
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - intent: afirmar
   examples: |
     - sim
@@ -332,6 +356,10 @@ nlu:
     - Bot, me mostra o [menu](menu)
     - Quais são as [opções](menu) de diálogo?
     - Me mostre as [opcoes](menu) de conversa
+<<<<<<< HEAD
+    - Bot, me mostra o [menu](menu)
+=======
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - intent: exemplo_acao
   examples: |
     - [action](acao)
@@ -346,6 +374,362 @@ nlu:
     - executa [forms](forms)
     - roda [forms](forms)
     - entra [forms](forms)
+<<<<<<< HEAD
+- intent: areas_de_atuacao
+  examples : |
+    - quais são as áreas de atuação
+    - em que área a [defensoria](defensoria) atua
+    - qual a área de atuação da [defensoria](defensoria)
+    - onde posso contar com a ajuda da [defensoria](defensoria)
+- intent: informar_vara
+  examples : |
+    - [familia](vara)
+    - [criminal](vara)
+    - [cível](vara)
+    - [consumidor](vara)
+    - [defesa da mulher](vara)
+    - [direitos humanos](vara)
+    - [fazenda pública](vara)
+    - [idoso](vara)
+    - [juizados especiais](vara)
+    - [moradia](vara)
+    - [saúde](vara)
+    - [solução extrajudial de conflitos](vara)
+    - [sucessões](vara)
+    - [tribunais](vara)
+    - vara da [familia](vara)
+    - vara de [familia](vara)
+    - vara [criminal](vara)
+    - vara do [crime](vara)
+    - vara [cível](vara)
+    - vara [menor](vara)
+    - vara [infância](vara)
+    - vara [infância e juventude](vara)
+    - vara [criança](vara)
+    - vara [criança e adolescência](vara)
+    - vara do [menor](vara)
+    - vara da [infância](vara)
+    - vara da [infância e juventude](vara)
+    - vara da [criança](vara)
+    - vara da [criança e adolescência](vara)
+    - [menor](vara)
+    - [infância](vara)
+    - [infância e juventude](vara)
+    - [criança](vara)
+    - [criança e adolescência](vara)
+    - vara do [consumidor](vara)
+    - vara da [defesa da mulher](vara)
+    - var dos [direitos humanos](vara)
+    - vara da [fazenda pública](vara)
+    - vara do [idoso](vara)
+    - vara dos [juizados especiais](vara)
+    - vara da [moradia](vara)
+    - vara da [saúde](vara)
+    - vara da [solução extrajudial de conflitos](vara)
+    - vara de [sucessões](vara)
+    - vara dos [tribunais](vara)
+- lookup: vara
+  examples: |
+    - familia
+    - criminal
+    - cível
+    - consumidor
+    - torcedor
+    - defesa da mulher
+    - direitos humanos
+    - fazenda pública
+    - idoso
+    - juizados especiais
+    - moradia
+    - saúde
+    - solução extrajudial de conflitos
+    - sucessões
+    - tribunais
+- synonym: defensoria
+  examples: |
+    - defensoria
+    - defensoria pública
+    - defensoria publica
+    - dpe
+    - dpge
+    - DPGE
+- synonym: familia
+  examples: |
+    - familia
+    - família
+    - INVESTIGAÇÃO DE PATERNIDADE
+    - DIVÓRCIO LITIGIOSO
+    - EXECUÇÃO DE ALIMENTOS
+    - CUMPRIMENTO DE SENTENÇA
+    - AÇÃO DE GUARDA
+    - AÇÃO DE ALIMENTOS
+    - ALIMENTOS 
+    - GUARDA
+    - EXONERAÇÃO DE ALIMENTOS
+    - NEGATÓRIA DE PATERNIDADE
+    - RECONHECIMENTO E DISSOLUÇÃO DA UNIÃO ESTÁVEL
+    - INTERDIÇÃO
+    - CURATELA
+    - AÇÃO REVISIONAL DE ALIMENTOS 
+    - REDUÇÃO
+    - CONVERSÃO DE SEPARAÇÃO JUDICIAL EM DIVÓRCIO
+    - SEPARAÇÃO JUDICIAL
+    - AÇÃO REVISIONAL DE ALIMENTOS (MAJORAÇÃO)
+    - OFERTA DE ALIMENTOS
+    - DIVÓRCIO CONSENSUAL
+    - BUSCA E APREENSÃO DE MENOR
+    - PRECATÓRIA
+    - AÇÃO DE REGULAMENTAÇÃO DO DIREITO DE VISITAS
+    - HOMOLOGAÇÃO DE ACORDO EXTRAJUDICIAL
+    - AÇÃO DE MODIFICAÇÃO DE GUARDA
+    - ALIMENTOS (EXONERAÇÃO)
+    - RECONHECIMENTO E DISSOLUÇÃO DA UNIÃO ESTÁVEL POST MORTEM
+    - INVESTIGAÇÃO DE PATERNIDADE PÓS MORTEM
+    - DESTITUIÇÃO DE TUTELA 
+    - CURATELA
+    - REVISÃO DE ALIMENTOS 
+    - REDUÇÃO DE ALIMENTOS
+    - ALVARÁ DE FGTS (ALIMENTOS)
+    - ALIMENTOS GRAVÍDICOS
+    - ALIMENTOS (FIXAÇÃO/REVISÃO/EXONERAÇÃO)
+    - ALIMENTOS (FIXAÇÃO/OFERTA)
+    - AÇÃO DE ALIMENTOS AVOENGOS
+    - LEVANTAMENTO DA INTERDIÇÃO/CURATELA
+    - PARTILHA DE BENS
+    - SUBSTITUIÇÃO DE CURADOR
+    - TUTELA
+    - GUARDA (FIXAÇÃO)
+    - PROCEDIMENTOS EM GERAL
+    - ALIMENTOS (REVISÃO/MAJORAÇÃO)
+    - ADOÇÃO DE MAIOR
+    - RECONHECIMENTO DE MATERNIDADE
+    - ALIENAÇÃO PARENTAL
+    - GUARDA 
+    - CONVIVÊNCIA PARENTAL
+- synonym: infância e juventude
+  examples: |
+    - menor
+    - infância
+    - infância e juventude
+    - infancia
+    - infancia e juventude
+    - criança
+    - crianca
+    - crianca e adolescencia
+    - criança e adolescência
+    - PERDA OU SUSPENSÃO DO PODER FAMILIAR
+    - AÇÃO SOCIOEDUCATIVA - APURAÇÃO DE ATO INFRACIONAL
+    - PEDIDO DE MEDIDA DE PROTEÇÃO
+    - SUPRIMENTOS DE AUTORIZAÇÃO DE VIAGEM 
+    - SUPRIMENTOS DE AUTORIZAÇÃO DE CASAMENTO ADOLESCENTE 
+    - ALIMENTAÇÃO ESPECIAL LEITE
+    - EXAMES DE PATERNIDADE
+    - ABANDONO MATERIAL
+    - ESTUDO SOCIAL
+- synonym: criminal
+  examples: |
+    - criminal
+    - crime
+    - penal
+    - CRIMES DO CÓDIGO DE TRÂNSITO BRASILEIRO	
+    - CRIMES DO ESTATUTO DO DESARMAMENTO	
+    - CRIMES PRATICADOS POR ORGANIZAÇÕES CRIMINOSAS	
+    - CRIMES DIVERSOS	
+    - ROUBO	
+    - CRIMES CONTRA O PATRIMÔNIO	
+    - CRIMES DE TRÁFICO DE DROGAS	
+    - EXECUÇÃO PENAL	
+    - CONTATO COM FAMILIARES	
+    - CRIMES DE LESÕES CORPORAIS	
+    - CRIME DE HOMICÍDIO	
+    - CRIME DE AMEAÇA	
+    - ESTUPRO	
+    - CRIMES CONTRA A LIBERDADE SEXUAL	
+    - FURTO	
+    - AÇÃO DIVERSAS	
+    - CONTRAVENÇÃO PENAL	
+    - CRIME RECEPTAÇÃO	
+    - CRIMES AMBIENTAIS	
+    - CONTATO COM ASSISTIDO	
+    - CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA	
+    - CRIMES CONTRA A FÉ PÚBLICA	
+    - INFORMAÇÕES PROCESSUAIS	
+    - DESACATO	
+    - CRIMES CONTRA A PROPRIEDADE INTELECTUAL	
+    - RELAXAMENTO DE PRISÃO	
+    - CRIMES DO ESTATUTO DO IDOSO	
+    - CRIMES CONTRA A HONRA	
+    - DENÚNCIA	
+    - CRIMES SEXUAIS CONTRA VULNERÁVEL	
+    - POSSE DE DROGAS PARA CONSUMO PESSOAL	
+    - CRIMES CONTRA A INCOLUMIDADE PÚBLICA	
+    - DISCUSSÃO DE CASO COM DEFENSOR	
+    - DESPACHO DE EXPEDIENTE	
+    - RESTITUIÇÃO DE BEM APREENDIDO	
+    - MEMORANDO	
+    - ADIMPLEMENTO E EXTINÇÃO
+- synonym: cível
+  examples: |
+    - USUCAPIÃO
+    - EMBARGOS À EXECUÇÃO
+    - SAÚDE
+    - REINTEGRAÇÃO DE POSSE
+    - REPETIÇÃO DE INDÉBITO ICMS
+    - INTERPRETAÇÃO DE CONTRATO
+    - REVISÃO DE COTRATO
+    - INDENIZAÇÃO
+    - OUTROS
+    - OFÍCIO
+    - ALIENAÇÃO FIDUNCIÁRIA
+    - REPARAÇÃO DE DANOS
+    - AÇÃO DE RESCISÃO DE CONTRATO
+    - ESBULHO 
+    - TURBAÇÃO 
+    - AMEAÇA
+    - CAGECE 
+    - ENEL
+    - DESPEJO
+    - DEFEITO
+    - NULIDADE
+    - ANULAÇÃO
+    - AÇÃO CIVIL
+    - ALUGUÉIS
+    - AÇÃO DECLARATÓRIA DE INEXIGILIDADE DE DÉBITO
+    - DÉBITO
+    - DÉBITOS
+    - EXECUÇÃO DE TÍTULOS
+    - CONTRATO 
+    - RESPONSABILIDADE CIVIL
+    - BUSCA E APREENSÃO DE BENS 
+    - MONITÓRIA
+    - DESPEJO
+    - ANULATÓRIA
+    - PERDAS E DANOS
+    - DECLARATÓRIA DE NULIDADE
+    - DIREITO DO CONSUMIDOR
+    - COBRANÇA DE DÍVIDA
+    - CONSIGNAÇÃO EM PAGAMENTO
+    - OBRIGAÇÃO DE NÃO FAZER
+    - ACIDENTE DE TRÂNSITO
+    - DANOS MORAIS
+    - REVISIONAL EMPŔESTIMO PESSOAL
+    - DECLARATÓRIA
+    - INADIMPLEMENTO
+    - PRESTAÇÃO DE CONTAS
+    - REVISIONAL DE CONTRATO
+    - INTIMAÇÃO
+    - IMISSÃO DE POSSE
+    - REIVINDICATÓRIA
+    - COBRANÇA SEGURO
+    - ADJUDICAÇÃO COMPULSÓRIA
+    - EXIBIÇÃO DE DOCUMENTOS
+    - AUXÍLIO-DOENÇA
+    - REAJUSTES DE REMUNERAÇÃO
+    - CANCELAMENTO INDEVIDO DE PLANO DE SAÚDE
+    - CONSÓRCIO
+    - ADJUDICAÇÃO COMPULSÓRIA
+    - INVENTÁRIO NEGATIVO
+    - LIBERAÇÃO DE CORPO
+    - CANCELAMENTO DE PROTESTO 
+    - SUSTAÇÃO DE PROTESTO
+    - TRATAMENTO EM HOME-CARE PLANO DE SAÚDE 
+    - TRATAMENTO EM HOME-CARE PROFISSIONAIS DE SAÚDE
+    - RESPONSABILIDADE DA ADMINISTRAÇÃO
+    - SERVIÇOS HOSPITALARES
+    - CIRURGIA
+    - PLANO DE SAUDE    
+    - VÍCIO DO PRODUTO
+- synonym: Fazenda Pública
+  examples: |
+    - OBRIGAÇÃO DE FAZER
+    - LEITO DE UTI
+    - MEDICAMENTO FORA DA LISTA DO SUS
+    - AÇÃO COMINATÓRIA
+    - DESAPROPRIAÇÃO
+    - SOLICITAÇÃO DE LEITO HOSPITALAR
+    - AÇÃO CIVIL PÚBLICA
+    - NUNCIAÇÃO DE OBRA NOVA
+    - MEDICAMENTOS DISPONIBILIZADOS PELO SUS
+    - LAUDO DE UTI
+    - AÇÃO DEMOLITÓRIA
+    - OPOSIÇÃO
+    - BOMBA DE INSULINA
+    - AÇÃO PENSÃO POR MORTE
+- synonym: Juri
+  examples: |
+    - juri
+    - CRIMES CONTRA A VIDA
+- synonym: NADIJ
+  examples: |
+    - NADIJ
+    - nadji
+    - ADOÇÃO
+    - GUARDA
+    - Medida Protetiva de Acolhimento
+    - ADPF
+    - Busca e Apreensão
+    - Cautelar Inominada
+    - Apuração de Ato Infracional
+    - Restituição do Poder Familiar
+    - Execução de Medida Socioeducativa
+    - Ação Penal
+    - Carta Precatória
+    - Conflito de Competência
+    - Alimentos
+    - Suprimento de Registro de Nascimento
+    - Regulamentação de Visitas
+    - Interdição
+    - Providências
+    - Apelação
+    - Inventário e Partilha
+    - Reparação de Dano
+    - Pedido de Autorização de Viagem
+    - ACP
+- synonym: NUDECON
+  examples: |
+    - NUDECON
+    - REVISIONAL EMPŔESTIMO CONSIGNADO
+    - CARTÃO DE CRÉDITO CONSIGNADO
+    - FRAUDE EM CONTRATO DE EMPRÉSTIMO
+    - DISTRATO PRODUTO OU SERVIÇO
+    - REVISIONAL DE FINANCIAMENTO DE VEÍCULO
+    - DISTRATO DE COMPRA E VENDA DE IMÓVEL POR DESISTÊNCIA
+    - FRAUDE EM COMPRAS ATRAVÉS DE CARTÃO
+    - DISTRATO DE CONSÓRCIO COM DEVOLUÇÃO DE VALORES
+    - REEMBOLSO DE PROCEDIMENTO NÃO AUTORIZADO - PLANO DE SAÚDE
+- synonym: NUDESA
+  examples: |
+    - NUDESA
+    - FRALDAS
+    - MEDICAMENTO
+    - ENVIO DE OFÍCIO
+    - SOLICITAÇÃO DE TRANSFERÊNCIA HOSPITALAR
+    - SOLICITAÇÃO DE CAMA E COLCHÃO HOSPITALAR
+    - ALIMENTAÇÃO ESPECIAL
+    - APARELHO RESPIRATÓRIO
+    - INSULINA E INSUMOS
+    - ÓCULOS DE GRAU/LENTES
+    - PROFISSIONAIS DE SAÚDE PEDIDO DO SERVIÇO DE ATENDIMENTO DOMICILIAR (PAD)
+    - OXIGÊNIO
+    - CPAP
+    - OXIGENOTERAPIA HIPERBÁRICA
+    - LUCENTIS INICIAR TRATAMENTO
+    - LUCENTIS CONTINUAR TRATAMENTO
+- synonym: SUCESSÕES
+  examples: |
+    - SUCESSÕES
+    - INVENTÁRIO
+    - ARROLAMENTO SUMÁRIO
+
+
+
+
+
+
+
+
+
+=======
   # response selectors
 - intent: explica/forms
   examples: |
@@ -395,3 +779,4 @@ nlu:
     - Exemplo de [storie](storie)
     - Me explique como funcionam as [storie](storie) no rasa.
     - Você sabe fazer uma [storie](storie)?
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888

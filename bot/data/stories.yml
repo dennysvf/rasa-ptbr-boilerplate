@@ -14,6 +14,8 @@ stories:
   steps:
   - intent: despedir
   - action: utter_despedir
+<<<<<<< HEAD
+=======
 - story: religiao
   steps:
   - intent: religiao
@@ -34,6 +36,7 @@ stories:
   - intent: piada
   - action: utter_piada
   - action: utter_continuar_conversa
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - story: licenca
   steps:
   - intent: licenca
@@ -44,6 +47,27 @@ stories:
   - intent: onde_voce_mora
   - action: utter_onde_voce_mora
   - action: utter_continuar_conversa
+<<<<<<< HEAD
+- story: coletar_vara
+  steps:
+  - intent: informar_vara 
+  - slot_was_set:
+    - vara : familia
+  - action: utter_vara_familia 
+  - action: utter_continuar_conversa
+- story: coletar_vara_moradia
+  steps:
+  - intent: informar_vara 
+  - slot_was_set:
+    - vara : moradia
+  - action: utter_vara_moradia 
+  - action: utter_continuar_conversa
+- story: coletar_vara_generica
+  steps:
+  - intent: informar_vara 
+  - action: utter_vara 
+  - action: utter_continuar_conversa  
+=======
 - story: musica
   steps:
   - intent: musica
@@ -69,16 +93,20 @@ stories:
   - intent: signo
   - action: utter_signo
   - action: utter_continuar_conversa
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - story: triste
   steps:
   - intent: triste
   - action: utter_triste
   - action: utter_continuar_conversa
+<<<<<<< HEAD
+=======
 - story: historia
   steps:
   - intent: historia
   - action: utter_historia
   - action: utter_continuar_conversa
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 - story: Tudo Bem 
   steps:
   - intent: tudo_bem
@@ -92,9 +120,43 @@ stories:
   steps:
   - intent: me_ajuda
   - action: utter_me_ajuda
+<<<<<<< HEAD
+  - action: utter_perguntar_se_quer_atendimento
+  - intent: afirmar
+  - action: utter_perguntar_vara
+  - intent: informar_vara 
+  - slot_was_set:
+    - vara : familia
+  - action: utter_vara 
+  - action: utter_continuar_conversa
+- story: me ajuda-moradia
+  steps:
+  - intent: me_ajuda
+  - action: utter_me_ajuda
+  - action: utter_perguntar_se_quer_atendimento
+  - intent: afirmar
+  - action: utter_perguntar_vara
+  - intent: informar_vara 
+  - slot_was_set:
+    - vara : moradia
+  - action: utter_vara_moradia
+  - intent: afirmar
+  - action: utter_continuar_conversa
+
+
+- story: interactive_story_1
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: menu
+    entities:
+    - menu: menu
+  - action: utter_continuar_conversa
+=======
 - story: exemplo acao
   steps:
   - intent: exemplo_acao
     entities:
       - acao
   - action: action_exemplo
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888

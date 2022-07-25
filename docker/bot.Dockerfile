@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+FROM rasa/rasa:3.2.0-full
+=======
 FROM rasa/rasa:3.0.8
+>>>>>>> 0f41927e08216d70ca7071901b26f2b747d99888
 
 WORKDIR /bot
 COPY ./bot /bot
